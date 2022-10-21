@@ -5,6 +5,8 @@ ifeq ($(CONFIG_TRACEPOINTS),y)
   videobuf2-common-objs += vb2-trace.o
 endif
 
+EXTRA_CFLAGS += -Wno-incompatible-pointer-types
+
 obj-$(CONFIG_VIDEOBUF2_CORE) += videobuf2-common.o
 obj-$(CONFIG_VIDEOBUF2_V4L2) += videobuf2-v4l2.o
 obj-$(CONFIG_VIDEOBUF2_MEMOPS) += videobuf2-memops.o
