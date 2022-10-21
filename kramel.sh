@@ -13,7 +13,7 @@
 # Some Placeholders: [!] [*] [✓] [✗]
 
 # Default defconfig to use for builds.
-export CONFIG=nethunhter-z3s_defconfig
+export CONFIG=nethunter-z3s_defconfig
 
 # Default directory where kernel is located in.
 KDIR=$(pwd)
@@ -116,7 +116,7 @@ if [[ "${MODULE}" = 1 ]]; then
     fi
 fi
 
-if [ ! -d "${KDIR}/anykernel3-mi439/" ]; then
+if [ ! -d "${KDIR}/anykernel3-z3s/" ]; then
     git clone --depth=1 https://github.com/MrRob0-X/anykernel3 -b z3s anykernel3-z3s
 fi
 
